@@ -164,7 +164,8 @@ jobs:
         -backend-config='storage_account_name=${{ inputs.terraform_st_storage_account }}'
         -backend-config='container_name=${{ inputs.terraform_st_container_name }}'
         -backend-config='key=${{ inputs.terraform_st_key }}'         
-        -backend-config='resource_group_name=${{ inputs.terraform_st_resource_group }}';      
+        -backend-config='resource_group_name=${{ inputs.terraform_st_resource_group }}'
+        -backend-config='use_azuread_auth=true';      
       env:
         ARM_CLIENT_ID: ${{ secrets.clientId }}
         ARM_CLIENT_SECRET: ${{ secrets.clientSecret }}

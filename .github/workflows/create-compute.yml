@@ -46,10 +46,10 @@ jobs:
           #    enable-oidc: true
           #
           # Choose the appropriate method based on your security requirements
-          client-id: ${{ secrets.ARM_CLIENT_ID }}
-          tenant-id: ${{ secrets.ARM_TENANT_ID }}
-          subscription-id: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-          client-secret: ${{ secrets.ARM_CLIENT_SECRET.}}
+          client-id: ${{secrets.ARM_CLIENT_ID}}
+          tenant-id: ${{secrets.ARM_TENANT_ID}}
+          subscription-id: ${{secrets.ARM_SUBSCRIPTION_ID}}
+          client-secret: ${{secrets.ARM_CLIENT_SECRET}}
           # Uncomment next line to use OIDC
           # enable-oidc: true
       - name: install-extension
